@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Наталья Хмель](https://up.htmlacademy.ru/htmlcss/24/user/663803).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Фарига`(https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
