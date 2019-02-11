@@ -47,40 +47,32 @@
       </ul>
       <form action="https://echo.htmlacademy.ru" method="post">
         <!-- <h2 class="visially-hidden">Закрытие окна</h2> -->
-        <span class="close-window">
-        <img class="icon-close" src="img/icon/icon-cross.svg" width="21" height="21">
-        </span>
-        <h2>Напишите нам</h2>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="your-name" id="name-field" placeholder="Имя Фамилия">
-        <br>
-        <br>
-        <label for="email-field">Ваш email:</label>
-        <input type="text" name="email" id="email-field" placeholder="email@exemple.com">
-        <br>
-        <br>
-        <label for="">Текст письма:</label>
-        <input type="text" name="text-email" id="text-field" placeholder="В свободной форме">
-        <br>
-        <br>
-        <input type="submit" value="Отправить">
-      </form>
-    </section>
-  </main>
+        <button type="button"><img src="img/icon/icon-cross.svg" width="21" height="21" alt="Кнопка закрытие окна"></button
+          <h2 class="pop-up">Напишите нам</h2>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="your-name" id="name-field" placeholder="Имя Фамилия" required>
+          <label for="email-field">Ваш email:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@exemple.com" required>
+          <label for="">Текст письма:</label>
+          <textarea name="comment" id="comment-field" rows="10" cols="80" required>В свободной форме</textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="main-footer">
+      <!-- <div class="footer-social"> -->
+      <ul class="footer-social">
+        <li><img src="img/icon/icon-vk.svg" width="26" height="15"><a class="social-button-vk" href="#">Вконтакте</a></li>
+        <li><img src="img/icon/icon-fb.svg" width="12" height="22"><a class="social-button-fb" href="#">Фейсбук</a></li>
+        <li><img src="img/icon/icon-insta.svg" width="21" height="21"><a class="social-button-insta" href="#">Инстаграм</a></li>
+      </ul>
+      <div class="footer-slogan">
+        <p class="footer-slogan-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <!-- </div> -->
+    </footer>
 
-  <footer class="main-footer">
-    <!-- <div class="footer-social"> -->
-    <ul class="footer-social">
-      <li><img src="img/icon/icon-vk.svg" width="26" height="15"><a class="social-button-vk" href="#">Вконтакте</a></li>
-      <li><img src="img/icon/icon-fb.svg" width="12" height="22"><a class="social-button-fb" href="#">Фейсбук</a></li>
-      <li><img src="img/icon/icon-insta.svg" width="21" height="21"><a class="social-button-insta" href="#">Инстаграм</a></li>
-    </ul>
-    <div class="footer-slogan">
-      <p class="footer-slogan-title">Давайте дружить, это выгодно!</p>
-      <p class="footer-slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    <!-- </div> -->
-  </footer>
-
-</body>
-</html>
+  </body>
+  </html>
