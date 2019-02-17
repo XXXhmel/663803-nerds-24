@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  width: 74px;
+  height: 13px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+ text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #000000;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #fb565a;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.feature-item h3 {
+  width: 135px;
+  height: 23px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.illustration-1 {
+  width: 300px;
+  height: 146px;
+  object-fit: contain;
+}
+
+.illustration-2 {
+  width: 300px;
+  height: 146px;
+  object-fit: contain;
+}
+
+.illustration-3 {
+  width: 300px;
+  height: 146px;
+  object-fit: contain;
+}
+
+.btn_red {
+  width: 160px;
+  height: 50px;
+  background-color: #fb565a;
+}
+
+.btn_green {
+  width: 160px;
+  height: 50px;
+  background-color: #00ca74;
+}
+
+.btn_yellow {
+  width: 160px;
+  height: 50px;
+  background-color: #efc84a;
+}
+
+.main-footer {
+  width: 79px;
+  height: 79px;
+  background-color: #ffffff;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social a {
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  text-decoration: underline;
+}
+
+.social-button-vk {
+  width: 26px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.social-button-fb {
+  width: 12px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.social-button-insta {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.footer-slogan-title {
+  width: 545px;
+  height: 35px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.footer-slogan-discount {
+  width: 343px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
