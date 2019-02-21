@@ -1,32 +1,36 @@
-body {
-  margin: 0;
-  padding: 0;
+.body {
 
   font-family: "Roboto", Arial, sans-serif;
-  width: 74px;
-  height: 13px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.88;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
-  text-transform: uppercase;
 }
 
 a {
  text-decoration: none;
 }
 
+/*Меню*/
 .main-navigation {
   font-size: 16px;
   line-height: 1.88;
   color: #000000;
 }
 
+/*Логотип*/
+.main-header-logo a {
+  width: 160px;
+  height: 65px;
+  opacity: 0.75;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+  opacity: 0.75;
+}
+
+/*Панель меню*/
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -34,6 +38,9 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.88;
   color: #000000;
 }
 
@@ -41,131 +48,205 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: #fb565a;
+  color: #fb565a;
 }
 
+.site-navigation a:active,
+.user-navigation a:active {
+  opacity: 0.3;
+}
+
+ {
+  color: #fb565a;
+}
+
+/*Преимущества*/
 .features-list {
   list-style: none;
 }
 
-.feature-item {
-  text-align: left;
-}
-
 .feature-item h3 {
-  width: 135px;
-  height: 23px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
 }
 
-.illustration-1 {
-  width: 300px;
-  height: 146px;
-  object-fit: contain;
+.feature-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 1.5;
+  color:#283136;
 }
 
-.illustration-2 {
-  width: 300px;
-  height: 146px;
-  object-fit: contain;
-}
-
+/*Иллюстрации*/
+.illustration-1,
+.illustration-2,
 .illustration-3 {
   width: 300px;
   height: 146px;
-  object-fit: contain;
 }
 
-.btn_red {
+
+/*Кнопки*/
+/*Красная*/
+.btn-red {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 1.13;
+  color: #ffffff;
   width: 160px;
   height: 50px;
   background-color: #fb565a;
 }
 
-.btn_green {
+a.btn-red:hover,
+a.btn-red:focus {
+  background-color: #e74246;
+}
+
+a.btn-red:active {
+  background-color: #d7373b;
+}
+
+/*Зеленая*/
+.btn-green {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 1.13;
+  color: #ffffff;
   width: 160px;
   height: 50px;
   background-color: #00ca74;
 }
 
-.btn_yellow {
+a.btn-red:hover,
+a.btn-red:focus {
+  background-color: #00bc6c;
+}
+
+a.btn-red:active {
+  background-color: #00aa62;
+}
+
+/*Желтая*/
+.btn-yellow {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 1.13;
+  color: #ffffff;
   width: 160px;
   height: 50px;
   background-color: #efc84a;
 }
 
+a.btn-red:hover,
+a.btn-red:focus {
+  background-color: #eab534;
+}
+
+a.btn-red:active {
+  background-color: #e5a722;
+}
+
+/*Подвал*/
 .main-footer {
-  width: 79px;
-  height: 79px;
-  background-color: #ffffff;
-}
-
-.footer-contacts a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  text-decoration: none;
-}
-
-.footer-social a {
+  font-family: "Roboto";
   width: 79px;
   height: 79px;
   background-color: #e1e1e1;
-  text-decoration: underline;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  background-color: #e74246;
+}
+
+.footer-social a:active {
+  background-color: #d7373b;
 }
 
 .social-button-vk {
   width: 26px;
   height: 15px;
-  object-fit: contain;
 }
 
 .social-button-fb {
   width: 12px;
   height: 22px;
-  object-fit: contain;
 }
 
 .social-button-insta {
   width: 21px;
   height: 21px;
-  object-fit: contain;
 }
 
+/*Текст*/
 .footer-slogan-title {
-  width: 545px;
-  height: 35px;
   font-family: Roboto;
   font-size: 36px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
 }
 .footer-slogan-discount {
-  width: 343px;
-  height: 16px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
   color: #444444;
+}
+
+/*Каталог*/
+.page-title {
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+}
+
+/*Фильтр товаров*/
+.grid,
+.features {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: #000000;
+}
+
+.filter-option {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 1.25;
+  color: #283136;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.filter-option a:hover,
+.filter-option a:focus {
+  color: #283136;
+}
+
+.filter-option a: {
+  opacity: 0.3;
+}
+
+/*Кнопка*/
+.catalog-item {
+  list-style: none;
 }
