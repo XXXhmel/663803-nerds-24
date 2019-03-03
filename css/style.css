@@ -13,6 +13,9 @@ a {
 
 /*Меню*/
 .main-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 16px;
   line-height: 1.88;
   color: #000000;
@@ -35,10 +38,15 @@ a {
 /*Панель меню*/
 .site-navigation,
 .user-navigation {
+  display: flex;
+  padding: 30px;
+  margin: 25px;
   list-style: none;
 }
 
 .main-navigation a {
+  flex-direction: row;
+  margin: 83px;
   color: inherit;
 }
 
@@ -54,6 +62,8 @@ a {
 
 /*Преимущества*/
 .features-list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -123,6 +133,7 @@ a {
 
 /*Подвал*/
 .footer-social {
+  display: flex;
   list-style: none;
 }
 
@@ -131,6 +142,8 @@ a {
   border-radius: 50%;
   width: 79px;
   height: 79px;
+  flex-direction: row;
+  margin: 5px;
   background: #e1e1e1;
   position: relative;
   font-size: 0;
@@ -214,22 +227,26 @@ a {
 
 /*Кнопка*/
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .catalog-item {
-  font-size: 16px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 650px;
+  padding: 10px;
+  margin: 5px;
   line-height: 1.13;
 }
 
 .subtitle-item {
   font-weight: 500;
-  line-height: 1.13;
   color: #283136;
 }
 
 .subtitle-btn {
-  line-height: 1.13;
   background-color: #fb565a;
 }
 
