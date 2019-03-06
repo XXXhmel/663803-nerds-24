@@ -27,7 +27,7 @@
   <main class="container">
     <!-- <h1 class="visually-hidden">Контент страницы</h1> -->
     <section class="features">
-      <h2 class="visially-hidden">Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
         <li class="feature-item">
           <img src="img/features/illustration-1.jpg" width="300" height="146" alt="Иллюстрация веб-сайты">
@@ -48,20 +48,83 @@
           <a href="#" class="feature-btn btn-yellow">Заказать</a>
         </li>
       </ul>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <!-- <h2 class="visially-hidden">Закрытие окна</h2> -->
-        <button type="button"><img src="img/icon/icon-cross.svg" width="21" height="21" alt="Кнопка закрытие окна"></button>
-          <h2 class="pop-up">Напишите нам</h2>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="your-name" id="name-field" placeholder="Имя Фамилия" required>
-          <label for="email-field">Ваш email:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@exemple.com" required>
-          <label for="comment-field">Текст письма:</label>
-          <textarea name="comment" id="comment-field" rows="10" cols="80" required>В свободной форме</textarea>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-    </main>
+    </section>
+
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about-info">
+        <p class="about-title">Мы - маленькая ...</p>
+        <p class="about-descr">Исповедуем классы ...</p>
+
+        <section class="about-order">
+          <h3 class="about-order-title">Выполняем заказы на разработку:</h3>
+          <ul class="about-order-list">
+            <li>Раз</li>
+            <li>Два</li>
+            <li>Три</li>
+          </ul>
+        </section>
+      </div>
+      <div class="about-statistic">
+        <img src="/..." width="" height="" alt="Логотип">
+
+        <table class="about-statistic-table">
+          <caption class="about-statistic-title">C 2004 года любим точность во всем:</caption>
+          <tbody>
+            <tr class="about-statistic-table-value">
+              <td>146%</td>
+              <td>100%</td>
+              <td>50%</td>
+            </tr>
+            <tr class="about-statistic-table-name">
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="partners">
+      <h2 class="visually-hidden">Партнеры</h2>
+      <ul class="partners-logos">
+        <li>
+          <a href="#">
+            <img src="" alt="Логотип htmlacademy">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="Логотип Бородинский">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="Логотип Пинк">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="Логотип Мишка">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+    <section class="contact">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="map"></div>
+      <div class="container">
+        <section class="contact-info">
+          <h3 class="contact-title">Nerds ...</h3>
+          <p class="contact-address">191186 ...</p>
+          <p class="contact-phone">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a href="form.html" class="button contact-button">Напишите нам</a>
+        </section>
+      </div>
+    </section>
 
     <footer class="main-footer">
       <!-- <div class="footer-social"> -->
@@ -77,5 +140,31 @@
       <!-- </div> -->
     </footer>
 
+    <div class="popup">
+      <h2 class="popup-title">Напишите нам</h2>
+      <button type="button" class="popup-close">
+        <img src="img/icon/icon-cross.svg" width="21" height="21" alt="Кнопка закрытие окна">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
+        <div class="contact-form-field">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="your-name" id="name-field" placeholder="Имя Фамилия" required>
+        </div>
+
+        <div class="contact-form-field">
+          <label for="email-field">Ваш email:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@exemple.com" required>
+        </div>
+
+        <div class="contact-form-field-full">
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" rows="10" cols="80" required>В свободной форме</textarea>
+        </div>
+
+        <button type="submit" class="button contact-form-submit">Отправить</button>
+      </form>
+    </div>
   </body>
   </html>
