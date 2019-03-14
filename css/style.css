@@ -11,6 +11,22 @@ a {
  text-decoration: none;
 }
 
+ html {
+   box-sizing: border-box;
+ }
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+.wrap {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+}
+
+
 /*Меню*/
 .main-navigation {
   display: flex;
