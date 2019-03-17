@@ -30,7 +30,6 @@ a {
 /*Меню*/
 .main-navigation {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -76,7 +75,6 @@ a {
 /*Преимущества*/
 .features-list {
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 
@@ -289,7 +287,6 @@ a {
 /*Меню*/
 .main-navigation {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -335,7 +332,6 @@ a {
 /*Преимущества*/
 .features-list {
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 
