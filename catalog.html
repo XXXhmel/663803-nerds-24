@@ -9,7 +9,8 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
+<div class="wrap">
+  <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нёрдс">
       </a>
@@ -20,9 +21,10 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="basket"><img src="img/icon/icon-cart.svg" width="15" height="15" alt="иконка корзина"><a href=""></a></li>
+        <li class="basket"><img src="img/icon/icon-cart.svg" width="15" height="15" alt="иконка корзина"><a href="#">Корзина</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="wrap catalog">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -30,6 +32,10 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-fields">
+          <legend class="filter-title">Стоимость:</legend>
+<!-- Прописать про стоимость, чтобы заработали функции -->
+        </fieldset>
         <fieldset class="filter-fields">
           <legend class="filter-title">Сетка:</legend>
           <ul class="filter-list">
@@ -68,7 +74,7 @@
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+                <label for="filter-basket"></label>
               </li>
             </ul>
         </fieldset>
@@ -182,7 +188,7 @@
           <a href="#">2</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a href="#">3</a>
         </li>
         <li class="pagination-next">
           <a href="#">Следующая</a>

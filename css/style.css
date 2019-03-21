@@ -133,6 +133,7 @@ html {
 .feature-title {
   font-size: 24px;
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .feature-subtitle {
@@ -146,6 +147,7 @@ html {
 .feature-btn {
   line-height: 1.13;
   color: ffffff;
+  text-transform: uppercase;
 }
 
 .feature-btn:active {
@@ -194,6 +196,7 @@ html {
   background-color: #e5a722;
 }
 
+/*О нас*/
 .about {
   padding: 40px 0 73px;
   display: flex;
@@ -205,10 +208,60 @@ html {
   margin-top: 34px;
 }
 
+.about-title {
+  font-size: 45px;
+  font-weight: 500;
+  width: 660px;
+  line-height: 1;
+  margin-top: 34px;
+}
+
+.about-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #283136;
+  width: 660px;
+  margin-top: 34px;
+}
+
+.about-order-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-order-list {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #283136;
+}
+
 .about-statistic {
   width: 360px;
 }
 
+.about-statistic-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-statistic-table-value {
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-statistic-table-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #283136;
+  line-height: 1;
+}
+
+/*Логотипы партнёров*/
 .partners {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -270,6 +323,25 @@ html {
   padding: 49px 50px 47px;
   background: #ffffff;
 }
+
+.contact-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-address {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.contact-phone{
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
 /*Подвал*/
 .main-footer {
   display: flex;
@@ -344,12 +416,15 @@ html {
 
 /*Текст*/
 .footer-slogan-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1;
   margin: 5px 0 11px;
 }
 
 .footer-slogan-discount {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.38;
   color: #444444;
   margin: 0;
@@ -371,6 +446,13 @@ html {
 
 .filters {
   width: 260px;
+}
+
+.filter-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  text-transform: uppercase;
 }
 
 .catalog-templates-sites {
@@ -435,4 +517,52 @@ html {
 .subtitle-btn:active {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/*Сортировка*/
+.sort {
+  display: flex;
+}
+
+.sort-title {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  text-transform: uppercase;
+}
+
+.sort-type {
+  display: flex;
+  padding: 0;
+  margin: px 0 0;
+  list-style: none;
+}
+
+.sort-direction {
+  display: flex;
+  list-style: none;
+}
+
+/*Нумерация страниц*/
+.pagination {
+  display: flex;
+  width: 443px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 11px;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #dbdbdb;
+}
+
+.pagination-next {
+  display: inline-block;
+  width: 260px;
+  background-color: #dbdbdb;
 }
