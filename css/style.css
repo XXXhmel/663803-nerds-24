@@ -250,7 +250,13 @@ html {
 
 .about-statistic-table-value {
   font-size: 45px;
+  width: 33,333333;
+  border-collapse: collapse;
+  padding: 0;
+  padding-top: 54px;
+  padding-bottom: 30px;
   font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -460,12 +466,131 @@ html {
   margin-left: auto;
 }
 
+/*Сложный фильтр стоимость*/
+.filter-range {
+  width: 330px;
+  margin: 50px auto;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #eeeeee;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #eeeeee;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #eeeeee;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #eeeeee;
+  border: 8px solid #eeeeee;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #eeeeee;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #eeeeee;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #eeeeee;
+}
+
 /*Фильтр товаров*/
 .features {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.67;
   padding: 80px 0;
+  margin: 0;
+  align-items: baseline;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -521,26 +646,39 @@ html {
 
 /*Сортировка*/
 .sort {
-  display: flex;
-}
-
-.sort-title {
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.67;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #000000;
+  margin: 0 0 0 auto;
   text-transform: uppercase;
 }
 
+.sort-title {
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+}
+
 .sort-type {
-  display: flex;
   padding: 0;
-  margin: px 0 0;
+  margin: 0 0;
   list-style: none;
 }
 
+.sort-type li {
+  margin: 0 26px 0 0;
+}
+
+.sort-type li:last-child {
+  margin: 0;
+  }
+
 .sort-direction {
-  display: flex;
+  width: 90px;
+  text-transform: uppercase;
   list-style: none;
 }
 
@@ -548,21 +686,24 @@ html {
 .pagination {
   display: flex;
   width: 443px;
-  justify-content: space-between;
   list-style: none;
-  margin: 0;
+  margin: 27px 0 60px;
   padding: 11px;
 }
 
 .pagination a {
-  display: inline-block;
   width: 50px;
   height: 50px;
   border: solid 3px #dbdbdb;
 }
 
 .pagination-next {
-  display: inline-block;
   width: 260px;
+  background-color: #dbdbdb;
+}
+
+.pagination-next a {
+  min-width: 260px;
+  padding: 13px;
   background-color: #dbdbdb;
 }
